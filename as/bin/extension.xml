@@ -1,0 +1,13 @@
+<extension xmlns="http://ns.adobe.com/air/extension/3.5">
+    <id>com.nextapps.appangintegrationane</id>
+    <versionNumber>1.0.0</versionNumber>
+    <platforms>
+        <platform name="Android-ARM">
+            <applicationDeployment>
+                <nativeLibrary>AppangIntegrationANE.jar</nativeLibrary>
+                <initializer>com.nextapps.appangintegrationane.AppangIntegrationANEExtension</initializer>
+                <finalizer>com.nextapps.appangintegrationane.AppangIntegrationANEExtension</finalizer>
+             </applicationDeployment>
+        </platform>
+    </platforms>
+</extension>

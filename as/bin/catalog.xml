@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+  <versions>
+    <swc version="1.2" />
+    <flex version="4.6.0" build="23201" minimumSupportedVersion="3.0.0" />
+  </versions>
+  <features>
+    <feature-script-deps />
+    <feature-files />
+  </features>
+  <libraries>
+    <library path="library.swf">
+      <script name="com/nextapps/appangintegrationane/AppangIntegrationANE" mod="1395216027000" signatureChecksum="4002763572" >
+        <def id="com.nextapps.appangintegrationane:AppangIntegrationANE" /> 
+        <dep id="trace" type="e" /> 
+        <dep id="flash.external:ExtensionContext" type="e" /> 
+        <dep id="Error" type="e" /> 
+        <dep id="flash.external:ExtensionContext" type="s" /> 
+        <dep id="Error" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+      </script>
+      <script name="_3c5d83f55f1afe9d123b3b9733d9dc722757b155d7021a5c487063f08f5482d0_flash_display_Sprite" mod="1395223745304" signatureChecksum="2951051551" >
+        <def id="_3c5d83f55f1afe9d123b3b9733d9dc722757b155d7021a5c487063f08f5482d0_flash_display_Sprite" /> 
+        <dep id="flash.system:Security" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:Sprite" type="i" /> 
+      </script>
+      <digests>
+        <digest type="SHA-256" signed="false" value="7f633d034884eed2772ef741822fa80d5e0398164c1d7a65fced1592c2db877b"   />
+      </digests>
+    </library>
+  </libraries>
+  <files>
+  </files>
+</swc>
