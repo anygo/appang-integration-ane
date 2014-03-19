@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Build ANE" default="all">
+     
+    <target name="all" >
+        <property name="SDK_PATH" value="/Applications/Adobe Flash Builder 4.7/sdks/ApacheFlexSDK"></property>
+        <property name="ADT" value="${SDK_PATH}/lib/adt.jar"></property>
+         
+    	
+    	<copy file="bin/AppangIntegrationANE.jar" todir="bin/android" overwrite="true"/>
+    	<unzip src="bin/AppangIntegrationANE.jar" dest="bin/temp"></unzip>
+    	<copydir src="bin/libNASRun" dest="bin/temp"/>
+    	<jar destfile="bin/AppangIntegrationANE.jar" basedir="bin/temp" />
+    	
+        <unzip src="bin/AppangIntegrationANE.swc" dest="bin"></unzip>     
+ 
+        <java jar="${ADT}" dir="bin" fork="true" output="build.log">
+            <arg value="-package"></arg>
+            <arg value="-target"></arg>
+            <arg value="ane"></arg>
+            <arg value="AppangIntegrationANE.ane"></arg>
+            <arg value="extension.xml"></arg>
+            <arg line="-swc AppangIntegrationANE.swc"/>
+            <arg line="-platform Android-ARM library.swf AppangIntegrationANE.jar"/>
+        </java>
+    </target> 
+</project>
